@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Domine', serif;;
 }
 
 .header {
@@ -9,8 +10,9 @@
     justify-content: space-around;
     width: 100%;
     height: 100px;
-    background-color: blanchedalmond;
+    background-color: #172233;
     align-items: center;
+    color: whitesmoke;
 
 }
 
@@ -18,16 +20,22 @@
     display: flex;
     flex-direction: row;
     width: 300px;
+    
 }
 
 .header ol li {
     margin-left: 30px;
     list-style-type: none;
+    
 }
 
 .header ol li a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
+}
+
+.header ol li a:hover {
+    text-decoration: underline;
 }
 
 .main-content {
@@ -56,6 +64,8 @@
 
 .main-content p {
     z-index: 1;
+    color: whitesmoke;
+    font-family: 'Domine', serif;
 }
 
 .bio {
@@ -75,11 +85,11 @@
 .box {
     width: 400px;
     height: auto;
-    background-color: blanchedalmond;
+    background-color: #8293AD;
     z-index: 1;
     position: relative;
     left: 400px;
-    border-radius: 5%;
+    border: 5px solid black;
     padding: 5px;
 }
 
@@ -113,11 +123,11 @@
     z-index: 2;
     border: solid black 4px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 .about-me-section {
-    background-color: rgb(201, 183, 157);
+    background-color: #2C4161;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -140,48 +150,46 @@
 .box2 {
     width: 400px;
     height: 200px;
-    background-color: blanchedalmond;
-    border-radius: 5%;
+    background-color: #8293AD;
+    border: solid 5px black;
     padding: 5px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0px 10px;
 }
 
 .box2 p {
     line-height: 25px;
+    color: whitesmoke;
+    font-family: 'Domine', serif;
 }
 
 .about-me-section2 {
-    background-color: rgb(201, 183, 157);
+    background-color: #172233;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     height: 570px;
     border-bottom: solid black 2px;
-    
-
 }
 
 .box3 {
     width: 400px;
     height: 200px;
-    background-color: blanchedalmond;
-    border-radius: 5%;
+    background-color: #8293AD;
+    border: 5px solid black;
     padding: 5px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0px 10px;
-    
 }
 
 .box3 p {
     line-height: 25px;
+    color: whitesmoke;
 }
 
 .about-me-section2 img {
@@ -189,20 +197,21 @@
     height: 500px;
     margin-top: 30px;
     box-shadow: 10px 10px;
-    border-radius: 3%;
+    border-radius: 3% 3%;
 }
 
 .project-reel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(201, 183, 157);
+    background-color: #172233;
     border-top: 3px solid black;
 
 }
 
 .project-reel h1 {
     margin-top: 20px;
+    color: whitesmoke;
 }
 
 .project-card {
@@ -216,6 +225,7 @@
     height: 450px;
     width: 350px;
     display: block;
+    border-radius: 5% 5% 0% 0%;
 }
 
 .project-box {
@@ -223,13 +233,29 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-
 }
 
 .project-card a {
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: #495261;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     text-align: center;
+    border-radius: 0% 0% 30% 30%;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
