@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Domine', serif;
     
 }
 
@@ -16,6 +17,15 @@
     color: whitesmoke;
     border-bottom: 5px solid black;
 
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
 }
 
 .main-content {
@@ -95,4 +105,34 @@ label {
     color: whitesmoke;
     position: relative;
     top: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    background-color: #2C4161;
+    align-items: center;
+    border-top: black 5px solid;
+    
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.social-media img {
+    margin-left: 10px;
+}
+
+.social-media ol {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media ol li {
+    list-style-type: none;
+    margin-left: 20px;
 }

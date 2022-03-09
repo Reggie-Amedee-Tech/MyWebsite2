@@ -5,9 +5,6 @@ function reveal() {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 10;
-      console.log(`this is windowHeight:${windowHeight}`)
-      console.log(`this is elementTop:${elementTop}`)
-      console.log(`this is elementVisible:${elementVisible}`)
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -17,4 +14,6 @@ function reveal() {
   }
 
 window.addEventListener('scroll', reveal)
+
+
 
